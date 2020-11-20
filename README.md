@@ -27,3 +27,11 @@ This directory contains following Data Structures and Algorithms implementations
     - put(), get(), remove(), hash()
     - findFirstNonRepeatingCharacter(), findFirstRepeatingCharacter()
     
+6.  HashTables & Sets
+    - Traversing:
+        - Breadth first (Level order)
+        - Depth first:
+            - Pre-order: Root, Left, Right.
+            - In-order: Left, Root, Right
+            - Post-order: Left, Right, Root
+    
