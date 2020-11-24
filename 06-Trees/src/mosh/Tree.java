@@ -99,7 +99,7 @@ public class Tree {
     private int height(Node root) {
         if(root == null)
             return -1;
-        if(isLeaf(root))
+        if(root.leftChild == null && root.rightChild == null)
             return 0;
         return 1 + Math.max(height(root.leftChild), height(root.rightChild));
     }
@@ -145,6 +145,12 @@ public class Tree {
         return false;
     }
 
+    public void swapRoot() {
+        var temp = root.leftChild;
+        root.leftChild = root.rightChild;
+        root.rightChild = temp;
+    }
+
     public boolean isBinarySearchTree() {
         return isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
@@ -156,6 +162,26 @@ public class Tree {
             return false;
         return isBinarySearchTree(root.leftChild, min, root.value - 1)
                 && isBinarySearchTree(root.rightChild, root.value + 1, max);
+    }
+
+    public void printNodesAtKDistance(int distance) {
+        printNodesAtKDistance(root, distance);
+    }
+
+    private void printNodesAtKDistance(Node root, int distance) {
+        if(root == null)
+            return;
+        if(distance == 0) {
+            System.out.println(root.value);
+            return;
+        }
+        printNodesAtKDistance(root.leftChild, distance - 1);
+        printNodesAtKDistance(root.rightChild, distance - 1);
+    }
+
+    public void traverseLevelOrder() {
+        for(var i = 0 ; i <= height() ; i++)
+            printNodesAtKDistance(i);
     }
 
 }

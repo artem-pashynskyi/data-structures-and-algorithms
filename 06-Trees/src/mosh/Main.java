@@ -33,6 +33,14 @@ public class Main {
         tree2.insert(10);
         System.out.println("Done");
         System.out.println(tree.equals(tree2));
+        System.out.println("isBinarySearchTree");
+        System.out.println(tree.isBinarySearchTree());
+//        tree.swapRoot();
+//        System.out.println(tree.isBinarySearchTree());
+        System.out.println("printNodesAtKDistance");
+        tree.printNodesAtKDistance(2);
+        System.out.println("traverseLevelOrder");
+        tree.traverseLevelOrder();
     }
 
     // f(3)
