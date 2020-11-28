@@ -1,4 +1,4 @@
-package school.lesson;
+package course.lesson;
 
 public class RotateMatrixMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package school.lesson;
+package course.lesson;
 
 public class MatrixService {
     // This service class has two methods one of which rotates a nxn matrix 90 degrees in-place.
