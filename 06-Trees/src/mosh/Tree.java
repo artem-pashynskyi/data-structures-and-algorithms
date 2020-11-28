@@ -1,5 +1,8 @@
 package mosh;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tree {
     private class Node {
         private int value;
@@ -119,7 +122,7 @@ public class Tree {
 
     //Binary Tree - O(n)
     private int min(Node root) {
-        if(isLeaf(root))
+        if(root.leftChild == null && root.rightChild == null)
             return root.value;
         int leftMin = min(root.leftChild);
         int rightMin = min(root.rightChild);
@@ -183,5 +186,88 @@ public class Tree {
         for(var i = 0 ; i <= height() ; i++)
             printNodesAtKDistance(i);
     }
+
+
+    /*
+    ************EXERCISES**************
+     */
+    public int size() {
+        return size(root);
+    }
+
+    private int size(Node root) {
+        if(root == null)
+            return 0;
+        return 1 + size(root.leftChild) + size(root.rightChild);
+    }
+
+    public int countLeaves() {
+        return countLeaves(root);
+    }
+
+    private int countLeaves(Node root) {
+        if(root == null)
+            return 0;
+        if(root.leftChild == null && root.rightChild == null)
+            return 1;
+        return countLeaves(root.leftChild) + countLeaves(root.rightChild);
+    }
+
+    public int max() {
+        return max(root);
+    }
+
+    private int max(Node root) {
+        if(root == null)
+            return -1;
+        if(root.leftChild == null && root.rightChild == null)
+            return root.value;
+        return max(root.rightChild);
+    }
+
+    public boolean contains(int value) {
+        return contains(root, value);
+    }
+
+    private boolean contains(Node root, int value) {
+        if(root == null)
+            return false;
+        else if(value == root.value)
+            return true;
+        return contains(root.leftChild, value) || contains(root.rightChild, value);
+    }
+
+    public boolean areSibling(int value1, int value2) {
+        return areSibling(root, value1, value2);
+    }
+
+    private boolean areSibling(Node root, int value1, int value2) {
+        if(root == null)
+            return false;
+        if(root.leftChild == null && root.rightChild == null)
+            return false;
+        if(root.leftChild.value == value1 && root.rightChild.value == value2)
+            return true;
+        else if(root.leftChild.value == value2 && root.rightChild.value == value1)
+            return true;
+        return areSibling(root.leftChild, value1, value2) || areSibling(root.rightChild, value1, value2);
+    }
+
+    public boolean getAncestors(int value) {
+        return getAncestors(root, value);
+    }
+
+    private boolean getAncestors(Node root, int value) {
+        if(root == null)
+            return false;
+        if(root.value == value)
+            return true;
+        if(getAncestors(root.leftChild, value) || getAncestors(root.rightChild, value)) {
+            System.out.println(root.value);
+            return true;
+        }
+        return true;
+    }
+
 
 }

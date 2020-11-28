@@ -38,4 +38,5 @@ This directory contains following Data Structures and Algorithms implementations
         - insert(), find()
         - traversePreOrder(), traverseInOrder(), traversePostOrder(), traverseLevelOrder()
         - height(), min(), equals(), isBinarySearchTree(), printNodesAtKDistance()
+        - size(), countLeaves(), max(), contains(), areSibling(), getAncestors()
     

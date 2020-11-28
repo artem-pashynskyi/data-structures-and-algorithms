@@ -12,15 +12,15 @@ public class Main {
         tree.insert(10);
         System.out.println("Done");
         System.out.println(tree.find(6));
-        System.out.println("Traverse Pre-Order");
+        System.out.println("***Traverse Pre-Order***");
         tree.traversePreOrder();
-        System.out.println("Traverse In-Order");
+        System.out.println("***Traverse In-Order***");
         tree.traverseInOrder();
-        System.out.println("Traverse Post-Order");
+        System.out.println("***Traverse Post-Order***");
         tree.traversePostOrder();
-        System.out.println("Height");
+        System.out.println("***Height***");
         System.out.println(tree.height());
-        System.out.println("Min");
+        System.out.println("***Min***");
         System.out.println(tree.min());
 
         Tree tree2 = new Tree();
@@ -33,14 +33,30 @@ public class Main {
         tree2.insert(10);
         System.out.println("Done");
         System.out.println(tree.equals(tree2));
-        System.out.println("isBinarySearchTree");
+        System.out.println("***isBinarySearchTree***");
         System.out.println(tree.isBinarySearchTree());
 //        tree.swapRoot();
 //        System.out.println(tree.isBinarySearchTree());
-        System.out.println("printNodesAtKDistance");
+        System.out.println("***printNodesAtKDistance***");
         tree.printNodesAtKDistance(2);
-        System.out.println("traverseLevelOrder");
+        System.out.println("***traverseLevelOrder***");
         tree.traverseLevelOrder();
+
+        /*
+         ************EXERCISES**************
+         */
+        System.out.println("***size***");
+        System.out.println(tree.size());
+        System.out.println("***countLeaves***");
+        System.out.println(tree.countLeaves());
+        System.out.println("***max***");
+        System.out.println(tree.max());
+        System.out.println("***contains***");
+        System.out.println(tree.contains(10));
+        System.out.println("***areSibling***");
+        System.out.println(tree.areSibling(1, 6));
+        System.out.println("***getAncestors***");
+        System.out.println(tree.getAncestors(1));
     }
 
     // f(3)
