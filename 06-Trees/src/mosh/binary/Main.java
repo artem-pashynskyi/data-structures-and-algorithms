@@ -1,4 +1,4 @@
-package mosh;
+package mosh.binary;
 
 public class Main {
     public static void main(String[] args) {

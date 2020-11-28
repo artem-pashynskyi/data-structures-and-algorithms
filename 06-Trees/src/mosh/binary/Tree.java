@@ -1,7 +1,4 @@
-package mosh;
-
-import java.util.ArrayList;
-import java.util.List;
+package mosh.binary;
 
 public class Tree {
     private class Node {
