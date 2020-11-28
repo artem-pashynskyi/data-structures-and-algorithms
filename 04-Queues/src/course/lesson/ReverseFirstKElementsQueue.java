@@ -1,4 +1,4 @@
-package school.lesson;
+package course.lesson;
 
 public class ReverseFirstKElementsQueue {
     public static MyQueue reverseFirstK(MyQueue myQueue, int k) {

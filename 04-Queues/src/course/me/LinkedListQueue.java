@@ -1,4 +1,4 @@
-package school.me;
+package course.me;
 
 public class LinkedListQueue {
     private class Node {
