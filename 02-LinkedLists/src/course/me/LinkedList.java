@@ -1,4 +1,4 @@
-package school.me;
+package course.me;
 
 import java.util.NoSuchElementException;
 
