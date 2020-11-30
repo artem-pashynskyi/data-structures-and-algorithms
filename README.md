@@ -51,6 +51,6 @@ This directory contains following Data Structures and Algorithms implementations
             - Right - Left(RL)
         - insert(), balance(), balanceFactor(), isLeftHeavy(), isRightHeavy(), balanceFactor(), rotateLeft(), rotateRight(), setHeight()
         - height(), heightDebug(), size()
-        - isBalanced() - !(leftChild - rightChild > 1) && !(rightChild - leftChild > 1)
+        - isBalanced() - !(height(leftChild) - height(rightChild) > 1) && !(height(rightChild) - height(leftChild) > 1)
         - isPerfect() - Math.pow(2, height(root)+1)-1 == size(root)
             
