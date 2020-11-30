@@ -41,8 +41,9 @@ This directory contains following Data Structures and Algorithms implementations
         - size(), countLeaves(), max(), contains(), areSibling(), getAncestors()
         
     - AVL:
-        - Balanced if height(left) - height(right) > 1 --> left heavy (skewed)
-        - Unbalanced if height(right) - height(left) > 1 --> right heavy (skewed)
+        - Unbalanced(skewed): 
+            - height(left) - height(right) > 1 --> left heavy 
+            - height(right) - height(left) > 1 --> right heavy
         - Rotations:
             - Left(LL)
             - Right(RR)
