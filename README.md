@@ -28,7 +28,7 @@ This directory contains following Data Structures and Algorithms implementations
     - findFirstNonRepeatingCharacter(), findFirstRepeatingCharacter()
     
 6.  Binary Trees & AVL Trees
-    - Binary:
+    - Binary: (Can be skewed if insert elements in asc or desc order)
         - Traversing:
             - Breadth first (Level order)
             - Depth first:
@@ -39,4 +39,17 @@ This directory contains following Data Structures and Algorithms implementations
         - traversePreOrder(), traverseInOrder(), traversePostOrder(), traverseLevelOrder()
         - height(), min(), equals(), isBinarySearchTree(), printNodesAtKDistance()
         - size(), countLeaves(), max(), contains(), areSibling(), getAncestors()
-    
+        
+    - AVL:
+        - Balanced if height(left) - height(right) > 1 --> left heavy (skewed)
+        - Unbalanced if height(right) - height(left) > 1 --> right heavy (skewed)
+        - Rotations:
+            - Left(LL)
+            - Right(RR)
+            - Left - Right(LR)
+            - Right - Left(RL)
+        - insert(), balance(), balanceFactor(), isLeftHeavy(), isRightHeavy(), balanceFactor(), rotateLeft(), rotateRight(), setHeight()
+        - height(), heightDebug(), size()
+        - isBalanced() - !(leftChild - rightChild > 1) && !(rightChild - leftChild > 1)
+        - isPerfect() - Math.pow(2, height(root)+1)-1 == size(root)
+            
