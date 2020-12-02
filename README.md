@@ -10,6 +10,7 @@ This directory contains following Data Structures and Algorithms implementations
 	- Finding the Kth node from the last of a singly linked List in one pass.
 	- Finding the middle node/nodes of a singly linked list in one pass (Size is not known in advance)
 	- isEmpty(), addLast(), deleteLast(), print(), reverse(), findKthNodeFromTheEnd(), isPalindrome(), sortListDesc().
+	- getRandom() - Linked List Random Node
 		
 3.  Stacks
 	- Basic Stack implementation using a Linked List.

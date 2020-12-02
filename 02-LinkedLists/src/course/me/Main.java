@@ -51,5 +51,7 @@ public class Main {
         list.sortListAsc();
         System.out.println("sortListAsc()");
         list.print();
+        System.out.println("getRandom()");
+        System.out.println(list.getRandom());
     }
 }

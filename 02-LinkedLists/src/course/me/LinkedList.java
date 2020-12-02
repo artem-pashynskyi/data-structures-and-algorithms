@@ -1,6 +1,7 @@
 package course.me;
 
 import java.util.NoSuchElementException;
+import java.util.Random;
 
 public class LinkedList {
 
@@ -219,6 +220,21 @@ public class LinkedList {
             }
             current = current.next;
         }
+    }
+
+    /** Returns a random node's value. */
+    public int getRandom() {
+        Random random = new Random();
+        int result = first.value;
+        Node current = first;
+        int count = 0;
+        while(current != null) {
+            count++;
+            if(random.nextInt(count) == 0)
+                result = current.value;
+            current = current.next;
+        }
+        return result;
     }
 
 
