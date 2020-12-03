@@ -55,3 +55,6 @@ This directory contains following Data Structures and Algorithms implementations
         - isBalanced() - !(height(leftChild) - height(rightChild) > 1) && !(height(rightChild) - height(leftChild) > 1)
         - isPerfect() - Math.pow(2, height(root)+1)-1 == size(root)
             
+0.  Leetcode
+	- increasingBST() / Increasing Order Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
+	- lengthOfLongestSubstring() / Longest Substring Without Repeating Characters - Given a string s, find the length of the longest substring without repeating characters.       
