@@ -57,4 +57,5 @@ This directory contains following Data Structures and Algorithms implementations
             
 0.  Leetcode
 	- increasingBST() / Increasing Order Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
-	- lengthOfLongestSubstring() / Longest Substring Without Repeating Characters - Given a string s, find the length of the longest substring without repeating characters.       
+	- lengthOfLongestSubstring() / Longest Substring Without Repeating Characters - Given a string s, find the length of the longest substring without repeating characters.
+	- kthFactor() / The kth Factor of n. Factor of a number - A factor divides a number completely without leaving any remainder. For Ex: factors of number 12 are: [1,2,3,4,6,12]. Given two positive integers n and k. A factor of an integer n is defined as an integer i where n % i == 0. Consider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.    
