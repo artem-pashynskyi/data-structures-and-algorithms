@@ -41,7 +41,7 @@ This directory contains following Data Structures and Algorithms implementations
         - height(), min(), equals(), isBinarySearchTree(), printNodesAtKDistance()
         - size(), countLeaves(), max(), contains(), areSibling(), getAncestors()
         
-    - AVL:
+    - AVL trees:
         - Unbalanced(skewed): 
             - height(left) - height(right) > 1 --> left heavy 
             - height(right) - height(left) > 1 --> right heavy
@@ -54,11 +54,24 @@ This directory contains following Data Structures and Algorithms implementations
         - height(), heightDebug(), size()
         - isBalanced() - !(height(leftChild) - height(rightChild) > 1) && !(height(rightChild) - height(leftChild) > 1)
         - isPerfect() - Math.pow(2, height(root)+1)-1 == size(root)
+    
+    - Heaps:
+        - Complete (All levels should be full of nodes and levels should be filled from the left to the right).
+            - Each child of the Heap should be equal or smaller than parent. If not we need to bubble it up.
+            - Max Heap (Root is largest);
+            - Min Heap (Root is smallest). 
+        - Not Complete.
+        - insert(), remove(), isFull(), isEmpty(), sortHeap()
             
-0.  Leetcode
-	- increasingBST() / Increasing Order Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
-	- lengthOfLongestSubstring() / Longest Substring Without Repeating Characters - Given a string s, find the length of the longest substring without repeating characters.
-	- kthFactor() / The kth Factor of n. Factor of a number - A factor divides a number completely without leaving any remainder. For Ex: factors of number 12 are: [1,2,3,4,6,12]. Given two positive integers n and k. A factor of an integer n is defined as an integer i where n % i == 0. Consider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.
-	- canPlaceFlowers() / Can Place Flowers. You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots. Given an integer array flowerbed containing 0's and 1's, where 0 means empty and 1 means not empty, and an integer n, return if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers rule.
-	- longestPalindrome() / Longest Palindromic Substring. Given a string s, return the longest palindromic substring in s.
-	- populatingNextRightPointersinEachNodeII() / Populating Next Right Pointers in Each Node II. Given a binary tree populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL. Initially, all next pointers are set to NULL.
+0.  Leetcode:
+    - Trees:
+	    - increasingBST() / Increasing Order Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
+    	- populatingNextRightPointersinEachNodeII() / Populating Next Right Pointers in Each Node II. Given a binary tree populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL. Initially, all next pointers are set to NULL.
+	- Strings:
+	    - lengthOfLongestSubstring() / Longest Substring Without Repeating Characters - Given a string s, find the length of the longest substring without repeating characters.
+    	- longestPalindrome() / Longest Palindromic Substring. Given a string s, return the longest palindromic substring in s.
+	- Integers:
+	    - kthFactor() / The kth Factor of n. Factor of a number - A factor divides a number completely without leaving any remainder. For Ex: factors of number 12 are: [1,2,3,4,6,12]. Given two positive integers n and k. A factor of an integer n is defined as an integer i where n % i == 0. Consider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.
+	-Arrays:
+	    - canPlaceFlowers() / Can Place Flowers. You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots. Given an integer array flowerbed containing 0's and 1's, where 0 means empty and 1 means not empty, and an integer n, return if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers rule.
+	    - generateMatrix() / Spiral Matrix II. Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
