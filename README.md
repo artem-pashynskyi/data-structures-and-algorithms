@@ -77,7 +77,8 @@ This directory contains following Data Structures and Algorithms implementations
     	- longestPalindrome() / Longest Palindromic Substring. Given a string s, return the longest palindromic substring in s.
 	- Integers:
 	    - kthFactor() / The kth Factor of n. Factor of a number - A factor divides a number completely without leaving any remainder. For Ex: factors of number 12 are: [1,2,3,4,6,12]. Given two positive integers n and k. A factor of an integer n is defined as an integer i where n % i == 0. Consider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.
-	-Arrays:
+	- Arrays:
 	    - canPlaceFlowers() / Can Place Flowers. You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots. Given an integer array flowerbed containing 0's and 1's, where 0 means empty and 1 means not empty, and an integer n, return if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers rule.
 	    - generateMatrix() / Spiral Matrix II. Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
 	    - numPairsDivisibleBy60() / Pairs of Songs With Total Durations Divisible by 60. You are given a list of songs where the ith song has a duration of time[i] seconds. Return the number of pairs of songs for which their total duration in seconds is divisible by 60. Formally, we want the number of indices i, j such that i < j with (time[i] + time[j]) % 60 == 0.
+	    - validMountainArray() / Valid Mountain Array. Given an array of integers arr, return true if and only if it is a valid mountain array. Recall that arr is a mountain array if and only if: arr.length >= 3. There exists some i with 0 < i < arr.length - 1 such that: arr[0] < arr[1] < ... < arr[i - 1] < A[i]; arr[i] > arr[i + 1] > ... > arr[arr.length - 1]
