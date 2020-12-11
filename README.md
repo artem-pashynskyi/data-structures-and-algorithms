@@ -24,6 +24,10 @@ This directory contains following Data Structures and Algorithms implementations
 	- ArrayQueue, PriorityQueue, StackQueue, StackWithTwoQueues.
 
 5.  HashTables & Sets
+    - Collision:
+        - Chaining: In chaining we use array indexes to store the values. If hash code of second value also points to the same index then we replace that index value with an linked list and all values pointing to that index are stored in the linked list and actual array index points to the head of the the linked list. But if there is only one hash code pointing to an index of array then the value is directly stored in that index. Same logic is applied while retrieving the values. This is used in Java HashMap/Hashtable to avoid collisions.
+        - Linear probing: This technique is used when we have more index in the table than the values to be stored. Linear probing technique works on the concept of keep incrementing until you find an empty slot. The pseudo code looks like this:
+        - Double hashing technique: In this technique we use two hashing functions h1(k) and h2(k). If the slot at h1(k) is occupied then the second hashing function h2(k) used to increment the index. The pseudo-code looks like this:
     - Basic HashTable implementation with a Linked List.
     - put(), get(), remove(), hash()
     - findFirstNonRepeatingCharacter(), findFirstRepeatingCharacter()
