@@ -82,3 +82,5 @@ This directory contains following Data Structures and Algorithms implementations
 	    - generateMatrix() / Spiral Matrix II. Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
 	    - numPairsDivisibleBy60() / Pairs of Songs With Total Durations Divisible by 60. You are given a list of songs where the ith song has a duration of time[i] seconds. Return the number of pairs of songs for which their total duration in seconds is divisible by 60. Formally, we want the number of indices i, j such that i < j with (time[i] + time[j]) % 60 == 0.
 	    - validMountainArray() / Valid Mountain Array. Given an array of integers arr, return true if and only if it is a valid mountain array. Recall that arr is a mountain array if and only if: arr.length >= 3. There exists some i with 0 < i < arr.length - 1 such that: arr[0] < arr[1] < ... < arr[i - 1] < A[i]; arr[i] > arr[i + 1] > ... > arr[arr.length - 1]
+        - removeDuplicates() / Remove Duplicates from Sorted Array II. Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
+        
