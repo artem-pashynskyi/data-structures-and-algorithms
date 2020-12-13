@@ -86,6 +86,7 @@ This directory contains following Data Structures and Algorithms implementations
         - heapify(), getKthLargestNumber()
         
 7.  Tries
+    - Usage: Autocompletion.
 	- Digital.
 	- Radix.
 	- Prefix.
