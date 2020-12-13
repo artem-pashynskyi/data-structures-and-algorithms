@@ -95,6 +95,22 @@ This directory contains following Data Structures and Algorithms implementations
 	    - Post-order.
 	- TrieWithArray, TrieWithHashMap
 	- insert(), contains(), traverse()      
+	
+8.  Graphs
+    - A graph is a non-linear data structure consisting of vertices (V) and edges (E).
+    - Directed VS Undirected
+    - Usage: 
+        - Routers connection in network.
+        - How people connected in social media platforms and how strong the connections are.
+    - Traversal:
+        - Depth - first Search (go deep in each level).
+        - Breadth - first Search (using Queue).
+    - Implementation:
+        - Adjacency Matrix.
+        - Adjacency List.
+    - Nodes called - Vertices.
+    - Two connected Nodes are neighbors.
+    - Traversal algorithms.
             
 0.  Leetcode
     - Trees:
