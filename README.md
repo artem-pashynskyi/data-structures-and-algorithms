@@ -13,17 +13,30 @@ This directory contains following Data Structures and Algorithms implementations
 	- getRandom() - Linked List Random Node
 		
 3.  Stacks
+    - Usage: 
+        - Undo\redo operation in word processors.
+        - Expression evaluation and syntax parsing
+        - Many virtual machines like JVM are stack oriented.
 	- Basic Stack implementation using a Linked List.
 	- Expression balance check using a stack.
 	- Reverse a string with stack.	
 	- isBalanced(), reverse(), TwoStacks, MinStack.
 	
 4.  Queues
+    - Usage:
+        - Transport and operations research where various entities are stored and held to be processed later ie the queue performs the function of a buffer.
+        - Ticket counter line where people who come first will get his ticket first.
+        - Key press sequence in keyboard.
+        - Printers.
 	- Basic Queue implementation with a Linked List.
 	- Reverse First K elements of Queue
 	- ArrayQueue, PriorityQueue, StackQueue, StackWithTwoQueues.
 
 5.  HashTables & Sets
+    - Usage:
+        - used for fast data lookup - symbol table for compilers.
+        - Database indexing, caches. 
+        - Unique data representation.
     - Collision:
         - Chaining: In chaining we use array indexes to store the values. If hash code of second value also points to the same index then we replace that index value with an linked list and all values pointing to that index are stored in the linked list and actual array index points to the head of the the linked list. But if there is only one hash code pointing to an index of array then the value is directly stored in that index. Same logic is applied while retrieving the values. This is used in Java HashMap/Hashtable to avoid collisions.
         - Linear probing: This technique is used when we have more index in the table than the values to be stored. Linear probing technique works on the concept of keep incrementing until you find an empty slot. The pseudo code looks like this:
@@ -71,8 +84,18 @@ This directory contains following Data Structures and Algorithms implementations
         - Formula to get LAST parent: lastParent = (n / 2) - 1;
         - insert(), remove(), isFull(), isEmpty(), sortHeap()
         - heapify(), getKthLargestNumber()
+        
+7.  Tries
+	- Digital.
+	- Radix.
+	- Prefix.
+	- Traversals:
+	    - Pre-order.
+	    - Post-order.
+	- TrieWithArray, TrieWithHashMap
+	- insert(), contains(), traverse()      
             
-0.  Leetcode:
+0.  Leetcode
     - Trees:
 	    - increasingBST() / Increasing Order Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
     	- populatingNextRightPointersinEachNodeII() / Populating Next Right Pointers in Each Node II. Given a binary tree populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL. Initially, all next pointers are set to NULL.
