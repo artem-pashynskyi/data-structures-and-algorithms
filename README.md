@@ -111,6 +111,9 @@ This directory contains following Data Structures and Algorithms implementations
     - Nodes called - Vertices.
     - Two connected Nodes are neighbors.
     - Traversal algorithms.
+    - Dijkstra's shortest path algorithm can be implemented by using Priority Queue.
+    - Prim's algorithm to find the minimum spanning tree of the Graph:
+        - Extend the tree by adding the smallest connected edge.
             
 0.  Leetcode
     - Trees:
