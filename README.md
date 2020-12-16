@@ -73,7 +73,7 @@ This directory contains following Data Structures and Algorithms implementations
         - isPerfect() - Math.pow(2, height(root)+1)-1 == size(root)
     
     - Heaps:
-        - Complete (All levels should be full of nodes and levels should be filled from the left to the right).
+        - Is a Complete Binary Tree (All levels should be full of nodes and levels should be filled from the left to the right).
             - Each child of the Heap should be equal or smaller than parent. If not we need to bubble it up.
             - Min Heap (Root is smallest) - Default heap, PriorityQueue<Integer> heap = new PriorityQueue<>(); can be used. 
             - Max Heap (Root is largest)  - PriorityQueue<Integer> heap = new PriorityQueue<>(Comparator.reverseOrder()); can be used.
