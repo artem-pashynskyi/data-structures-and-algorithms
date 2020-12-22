@@ -103,8 +103,8 @@ This directory contains following Data Structures and Algorithms implementations
         - Routers connection in network.
         - How people connected in social media platforms and how strong the connections are.
     - Traversal:
-        - Depth - first Search (go deep in each level).
-        - Breadth - first Search (using Queue).
+        - Depth - first mosh.Search (go deep in each level).
+        - Breadth - first mosh.Search (using Queue).
     - Implementation:
         - Adjacency Matrix.
         - Adjacency List.
@@ -115,7 +115,7 @@ This directory contains following Data Structures and Algorithms implementations
     - Prim's algorithm to find the minimum spanning tree of the Graph:
         - Extend the tree by adding the smallest connected edge.
       
-8.  Sorting
+9.  Sorting
     - Comparison Sorts:
         - Inefficient O(n2):
             - Bubble Sort (O(n) - O(n2)) - Bubble sort is because after each pass the next largest item bubbles up and moves to it's correct position. It is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
@@ -138,9 +138,21 @@ This directory contains following Data Structures and Algorithms implementations
         - Counting Sort - is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
         - Bucket Sort - Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.       
  
+10.  Searching
+    - Not Sorted Array:
+        - Linear Search (O(1) - O(n)) - Searches for the target one by one.
+    - Sorted Array:
+        - Jump Search O(√n) - Improvement for Linear mosh.Search. Searches by blocks.
+        - Binary Search O(log 2 n) - Faster than Ternary mosh.Search. But only works in sorted lists:
+            - Recursive Implementation.
+            - Iterative Implementation.
+        - Ternary Search O(log 3 n) - Slower than Binary mosh.Search. But only works in sorted lists:
+            - Recursive Implementation.
+        - Exponential Search o(log i).
+ 
 0.  Leetcode
     - Trees:
-	    - increasingBST() / Increasing Order Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
+	    - increasingBST() / Increasing Order mosh.Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
     	- populatingNextRightPointersinEachNodeII() / Populating Next Right Pointers in Each Node II. Given a binary tree populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL. Initially, all next pointers are set to NULL.
 	- Strings:
 	    - lengthOfLongestSubstring() / Longest Substring Without Repeating Characters - Given a string s, find the length of the longest substring without repeating characters.
