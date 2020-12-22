@@ -42,9 +42,9 @@ public class AVLTree {
     private boolean isBalanced(AVLNode node) {
         if(node == null)
             return true;
-        var leftChild = height(node.leftChild);
-        var rightChild = height(node.rightChild);
-        return !(leftChild - rightChild > 1) && !(rightChild - leftChild > 1) && isBalanced(node.rightChild) && isBalanced(node.rightChild);
+        var leftHeight = height(node.leftChild);
+        var rightHeight = height(node.rightChild);
+        return !(leftHeight - rightHeight > 1) && !(rightHeight - leftHeight > 1) && isBalanced(node.rightChild) && isBalanced(node.rightChild);
     }
 
     public boolean isPerfect() {
