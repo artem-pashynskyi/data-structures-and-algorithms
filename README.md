@@ -115,6 +115,29 @@ This directory contains following Data Structures and Algorithms implementations
     - Prim's algorithm to find the minimum spanning tree of the Graph:
         - Extend the tree by adding the smallest connected edge.
             
+8.  Sorting
+    Comparison Sorts:
+        - Inefficient O(n2):
+            - Bubble Sort (O(n) - O(n2)) - Bubble sort is because after each pass the next largest item bubbles up and moves to it's correct position. It is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+            - Selection Sort(slowest / O(n2)) - Selection sort is because at each pass we find a min value and move it to the right place. It sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+            - Insertion Sort (O(n) - O(n2)) - is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+        - More efficient O(n log n):
+            - Merge Sort (n log n), Divide and Conquer algorithm. But we need to allocate additional space for each array when we split. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves.
+            - Quick Sort (O(n log n) - O(n2)):
+                If items are in the ascending or descending order - this is a worst case scenario.
+                With Pivot Selection we can fairly say that time complexity is O(n log n):
+                    - Pick Randomly.
+                    - Use the middle index.
+                    - Average of first, middle and last item.   
+                Overall we prefer Quick Sort to Merge sort, because Quick Sort requires less space.
+    Non-Comparison Sorts(Time-memory Trade-off):
+        When to use:
+            - Allocating extra space is not an issue.
+            - Values are positive integers.
+            - Most of the values in the range are present.
+        - Counting Sort - is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
+        - Bucket Sort - Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.       
+            
 0.  Leetcode
     - Trees:
 	    - increasingBST() / Increasing Order Search Tree - Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
