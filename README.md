@@ -1,10 +1,10 @@
 # data-structures-and-algorithms
 This directory contains following Data Structures and Algorithms implementations as well as projects and problem solving.
-1.  Arrays 
+1. Arrays 
 	- Matrix Rotation 90 degrees in place.
 	- Create Arrays class: insert(), removeAt(), indexOf(), print(), max(), reverse(), insertAt().
 
-2.  Linked Lists
+2. Linked Lists
 	- Basic Singly Linked List implementation with required methods.
 	- Reversing Singly Link List in one pass.
 	- Finding the Kth node from the last of a singly linked List in one pass.
@@ -12,7 +12,7 @@ This directory contains following Data Structures and Algorithms implementations
 	- isEmpty(), addLast(), deleteLast(), print(), reverse(), findKthNodeFromTheEnd(), isPalindrome(), sortListDesc().
 	- getRandom() - Linked List Random Node
 		
-3.  Stacks
+3. Stacks
     - Usage: 
         - Undo\redo operation in word processors.
         - Expression evaluation and syntax parsing
@@ -22,7 +22,7 @@ This directory contains following Data Structures and Algorithms implementations
 	- Reverse a string with stack.	
 	- isBalanced(), reverse(), TwoStacks, MinStack.
 	
-4.  Queues
+4. Queues
     - Usage:
         - Transport and operations research where various entities are stored and held to be processed later ie the queue performs the function of a buffer.
         - Ticket counter line where people who come first will get his ticket first.
@@ -32,7 +32,7 @@ This directory contains following Data Structures and Algorithms implementations
 	- Reverse First K elements of Queue
 	- ArrayQueue, PriorityQueue, StackQueue, StackWithTwoQueues.
 
-5.  HashTables & Sets
+5. HashTables & Sets
     - Usage:
         - used for fast data lookup - symbol table for compilers.
         - Database indexing, caches. 
@@ -45,7 +45,7 @@ This directory contains following Data Structures and Algorithms implementations
     - put(), get(), remove(), hash()
     - findFirstNonRepeatingCharacter(), findFirstRepeatingCharacter()
     
-6.  Binary Trees & AVL Trees
+6. Binary Trees & AVL Trees
     - Binary: (Can be skewed if insert elements in asc or desc order)
         - Traversing:
             - Breadth first (Level order)
@@ -85,7 +85,7 @@ This directory contains following Data Structures and Algorithms implementations
         - insert(), remove(), isFull(), isEmpty(), sortHeap()
         - heapify(), getKthLargestNumber()
         
-7.  Tries
+7. Tries
     - Usage: Autocompletion.
 	- Digital.
 	- Radix.
@@ -96,7 +96,7 @@ This directory contains following Data Structures and Algorithms implementations
 	- TrieWithArray, TrieWithHashMap
 	- insert(), contains(), traverse()      
 	
-8.  Graphs
+8. Graphs
     - A graph is a non-linear data structure consisting of vertices (V) and edges (E).
     - Directed VS Undirected
     - Usage: 
@@ -115,7 +115,7 @@ This directory contains following Data Structures and Algorithms implementations
     - Prim's algorithm to find the minimum spanning tree of the Graph:
         - Extend the tree by adding the smallest connected edge.
       
-9.  Sorting
+9. Sorting
     - Comparison Sorts:
         - Inefficient O(n2):
             - Bubble Sort (O(n) - O(n2)) - Bubble sort is because after each pass the next largest item bubbles up and moves to it's correct position. It is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
@@ -138,9 +138,11 @@ This directory contains following Data Structures and Algorithms implementations
         - Counting Sort - is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
         - Bucket Sort - Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.       
  
-10.  Searching
+10. Searching
+    - Comparison Sorts:
     - Not Sorted Array:
         - Linear Search (O(1) - O(n)) - Searches for the target one by one.
+    - Not Sorted Array:
     - Sorted Array:
         - Jump Search O(√n) - Improvement for Linear mosh.Search. Searches by blocks.
         - Binary Search O(log 2 n) - Faster than Ternary mosh.Search. But only works in sorted lists:
