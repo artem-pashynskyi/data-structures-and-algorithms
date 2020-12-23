@@ -139,18 +139,16 @@ This directory contains following Data Structures and Algorithms implementations
         - Bucket Sort - Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.       
  
 10. Searching
-    - Comparison Sorts:
     - Not Sorted Array:
         - Linear Search (O(1) - O(n)) - Searches for the target one by one.
-    - Not Sorted Array:
     - Sorted Array:
-        - Jump Search O(√n) - Improvement for Linear mosh.Search. Searches by blocks.
-        - Binary Search O(log 2 n) - Faster than Ternary mosh.Search. But only works in sorted lists:
+        - Jump Search O(Vn) - Improvement for Linear Search. Searches by blocks.
+        - Binary Search O(log 2 n) - Faster than Ternary Search. But only works in sorted lists:
             - Recursive Implementation.
             - Iterative Implementation.
-        - Ternary Search O(log 3 n) - Slower than Binary mosh.Search. But only works in sorted lists:
+        - Ternary Search O(log 3 n) - Slower than Binary Search. But only works in sorted lists:
             - Recursive Implementation.
-        - Exponential Search o(log i).
+        - Exponential Search O(log i).
  
 0.  Leetcode
     - Trees:
