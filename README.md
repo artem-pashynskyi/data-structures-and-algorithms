@@ -149,6 +149,20 @@ This directory contains following Data Structures and Algorithms implementations
         - Ternary Search O(log 3 n) - Slower than Binary Search. But only works in sorted lists:
             - Recursive Implementation.
         - Exponential Search O(log i).
+        
+11. String Manipulation
+    - countVowels()
+    - reverse()
+    - reverseWords()   
+    - areRotations()
+    - removeDuplicates()
+    - getMaxOccuringCharUsingHashTable()
+    - getMaxOccuringCharUsingASCIIArray()
+    - capitalize()
+    - areAnagramsUsingSorting()
+    - areAnagramsUsingCount()
+    - areAnagramsUsingStringBuilder()
+    - isPalindrome()
  
 0.  Leetcode
     - Trees:
