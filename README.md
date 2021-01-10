@@ -148,7 +148,7 @@ This directory contains following Data Structures and Algorithms implementations
             - Iterative Implementation.
         - Ternary Search O(log 3 n) - Slower than Binary Search. But only works in sorted lists:
             - Recursive Implementation.
-        - Exponential Search O(log i).
+        - Exponential Search O(log n).
         
 11. String Manipulation
     - countVowels()

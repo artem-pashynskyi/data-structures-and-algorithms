@@ -40,7 +40,7 @@ public class Search {
     }
 
     public int ternarySearchRec(int[] array, int target) {
-        return binarySearchRec(array, target, 0, array.length - 1);
+        return ternarySearchRec(array, target, 0, array.length - 1);
     }
 
     private int ternarySearchRec(int[] array, int target, int left, int right) {
