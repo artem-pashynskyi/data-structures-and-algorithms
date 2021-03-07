@@ -10,13 +10,13 @@ public class Main {
         System.out.println(search.linearSearch(numbers, 7));
 
         System.out.println("***Binary Search Recursive***");
-        System.out.println(search.binarySearchRec(numbersSorted, 7));
+        System.out.println(search.binarySearchRec(numbersSorted, 3));
 
         System.out.println("***Binary Search Iterative***");
         System.out.println(search.binarySearchIter(numbersSorted, 7));
 
         System.out.println("***Ternary Search***");
-        System.out.println(search.ternarySearchRec(numbersSorted, 7));
+        System.out.println(search.ternarySearchRec(numbersSorted, 5));
 
         System.out.println("***Jump Search***");
         System.out.println(search.jumpSearch(numbersSorted, 7));

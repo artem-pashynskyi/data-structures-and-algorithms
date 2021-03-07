@@ -20,7 +20,7 @@ public class Search {
         if(array[middle] == target)
             return middle;
         if(array[middle] > target)
-            binarySearchRec(array, target, left, middle - 1);
+            return binarySearchRec(array, target, left, middle - 1);
         return binarySearchRec(array, target, middle + 1, right);
     }
 
