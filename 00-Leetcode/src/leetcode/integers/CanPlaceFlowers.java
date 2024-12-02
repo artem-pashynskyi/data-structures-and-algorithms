@@ -1,6 +1,7 @@
 package leetcode.integers;
 
 public class CanPlaceFlowers {
+
     public static void main(String[] args) {
         System.out.println(canPlaceFlowers(new int[]{1,0,0,0,1}, 1));
     }

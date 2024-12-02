@@ -1,11 +1,15 @@
 package leetcode.strings;
 
 public class LongestPalindromicSubstring {
+    public static void main(String[] args) {
+        LongestPalindromicSubstring longestPalindromicSubstring = new LongestPalindromicSubstring();
+        System.out.println(longestPalindromicSubstring.longestPalindrome("adrleveltff"));
+    }
 
     int start;
     int palindromeLength;
 
-    //Ex: adflevelfff
+    //Ex: adrleveltff
     public String longestPalindrome(String string) {
         int strLength = string.length();
         if(strLength < 2)

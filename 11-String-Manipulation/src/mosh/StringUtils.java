@@ -56,7 +56,7 @@ public class StringUtils {
         return result.toString();
     }
 
-    public static Character getMaxOccuringCharUsingHashTable(String str) {
+    public static Character getMaxOccurringCharUsingHashTable(String str) {
         if(str == null && str.isEmpty())
             throw new IllegalArgumentException();
         Map<Character, Integer> map = new HashMap<>();

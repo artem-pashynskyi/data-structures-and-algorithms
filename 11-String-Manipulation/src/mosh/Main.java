@@ -7,8 +7,7 @@ public class Main {
         System.out.println(StringUtils.reverseWords("Trees are beautiful"));
         System.out.println(StringUtils.areRotations("ABCD", "BCDA"));
         System.out.println(StringUtils.removeDuplicates("Trees are beautiful"));
-        System.out.println(StringUtils.getMaxOccuringCharUsingHashTable("Trees are beautiful"));
-        System.out.println(StringUtils.getMaxOccuringCharUsingASCIIArray("Trees are beautiful"));
+        System.out.println(StringUtils.getMaxOccurringCharUsingHashTable("Trees are beautiful"));
         System.out.println(StringUtils.capitalize("today is a great day"));
         System.out.println(StringUtils.areAnagramsUsingSorting("ABCD", "DBCA"));
         System.out.println(StringUtils.areAnagramsUsingCount("ABCD", "DBCA"));

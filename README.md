@@ -172,6 +172,8 @@ This directory contains following Data Structures and Algorithms implementations
 	    - lengthOfLongestSubstring() / Longest Substring Without Repeating Characters - Given a string s, find the length of the longest substring without repeating characters.
     	- longestPalindrome() / Longest Palindromic Substring. Given a string s, return the longest palindromic substring in s.
     	- isSubsequence() / Is Subsequence. Given a string s and a string t, check if s is subsequence of t.
+        - findAnagrams() - FindAllAnagramsInAString438 - Given two strings s and p, return an array of all the start indices of p's
+          anagrams in s. You may return the answer in any order.
 	- Integers:
 	    - kthFactor() / The kth Factor of n. Factor of a number - A factor divides a number completely without leaving any remainder. For Ex: factors of number 12 are: [1,2,3,4,6,12]. Given two positive integers n and k. A factor of an integer n is defined as an integer i where n % i == 0. Consider a list of all factors of n sorted in ascending order, return the kth factor in this list or return -1 if n has less than k factors.
 	- Arrays:
